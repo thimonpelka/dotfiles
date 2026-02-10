@@ -1,0 +1,14 @@
+configuration {
+    modi: "drun,window,ssh,filebrowser,run";
+    show-icons: true;
+    drun-display-format: "{name}";
+    drun-sort-method: "mru";
+    drun-save-history: true;
+    // sidebar-mode: true;
+    kb-row-down: "Ctrl+j";
+    kb-row-up: "Ctrl+k";
+    kb-accept-entry: "KP_Enter,Return";
+    kb-remove-to-eol: "";
+    // kb-mode-next: "Tab";
+    // kb-mode-previous: "ISO_Left_Tab";
+}

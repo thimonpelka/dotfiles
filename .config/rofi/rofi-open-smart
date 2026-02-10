@@ -1,0 +1,14 @@
+#!/bin/bash
+
+file="$1"
+
+# Ask KDE what app would open this
+desktop=$(xdg-mime query default "$(xdg-mime query filetype "$file")")
+
+if [ -n "$desktop" ]; then
+    # KDE has a handler → use it
+    xdg-open "$file"
+else
+    # No handler → Neovim
+    ghostty -e nvim "$file"
+fi

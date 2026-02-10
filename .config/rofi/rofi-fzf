@@ -1,0 +1,5 @@
+#!/bin/bash
+
+fd . "$HOME" --type f --hidden --follow --exclude .git |
+rofi -dmenu -i -p "Files" |
+xargs -r ~/dotfiles/.config/rofi/rofi-open-smart
