@@ -4,11 +4,65 @@ configuration {
     drun-display-format: "{name}";
     drun-sort-method: "mru";
     drun-save-history: true;
-    // sidebar-mode: true;
+    sidebar-mode: false;
     kb-row-down: "Ctrl+j";
     kb-row-up: "Ctrl+k";
     kb-accept-entry: "KP_Enter,Return";
     kb-remove-to-eol: "";
     // kb-mode-next: "Tab";
     // kb-mode-previous: "ISO_Left_Tab";
+}
+
+@theme "/dev/null"
+
+* {
+	bg:				#151515;
+	fg:				#e8e8d3;
+	accent:				#5a5a5a;
+	button:				#1c1c1c;
+
+	background-color:		@bg;
+	text-color:			@fg;
+}
+
+window {
+    border-radius: 7px;
+    width: 30%;
+    padding: 15px;
+}
+
+prompt {
+	background-color:		@button;
+	enabled:			false;
+	padding:			0.5% 32px 0% -0.5%;
+	font:				"Rubik 10";
+}
+
+entry {
+    placeholder: "Search";
+	background-color:               @button;
+    placeholder-color:              @fg;
+    expand:                         true;
+    padding:                        0.15% 0% 0% 0%;
+}
+
+inputbar {
+	children:			[ prompt, entry ];
+    background-color:               @button;
+    expand:                         false;
+    border-radius:                  6px;
+    margin:                         0% 0% 5px 0%;
+    padding:                        10px;
+}
+
+listview {
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+
+selected {
+    background-color:               @accent;
+    border-radius:                  6px;
 }

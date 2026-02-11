@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+options="Shutdown\nReboot\nSuspend\nLogout\nNotes"
+
+choice=$(echo -e "$options" | rofi -dmenu -p "Power Menu" -matching fuzzy -i)
+
+case "$choice" in
+    Shutdown) systemctl poweroff ;;
+    Reboot) systemctl reboot ;;
+    Suspend) systemctl suspend ;;
+    Logout) pkill -KILL -u $USER ;;
+    Notes) ghostty -e nvim ~/Documents/Notes/. ;;
+esac
