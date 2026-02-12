@@ -61,3 +61,6 @@ vim.keymap.set("n", "<leader>C", ":e $MYVIMRC<CR>", {
 -- quickfix menu navigation:
 -- vim.keymap.set("n", "<leader>lj", ":cnext<CR>", { desc="Forward qfixlist"})
 -- vim.keymap.set("n", "<leader>lk", ":cprev<CR>", { desc="Backward qfixlist"})
+
+-- Add cargo path
+vim.env.PATH = vim.env.HOME .. "/.cargo/bin:" .. vim.env.PATH
