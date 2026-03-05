@@ -19,3 +19,22 @@ return {
 		vim.cmd.colorscheme("tokyonight-night")
 	end,
 }
+-- return {
+--     "rebelot/kanagawa.nvim",
+-- 	config = function()
+-- 		-- Catppuccin Theme
+-- 		require("kanagawa").setup()
+-- 		vim.cmd.colorscheme("kanagawa")
+-- 	end,
+-- }
+-- return {
+--   "thesimonho/kanagawa-paper.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {},
+-- 	config = function()
+-- 		-- Catppuccin Theme
+-- 		require("kanagawa-paper").setup()
+-- 		vim.cmd.colorscheme("kanagawa-paper")
+-- 	end,
+-- }

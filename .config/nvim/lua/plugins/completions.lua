@@ -145,9 +145,9 @@ return {
 				},
 			},
 
-			signature = {
-				enabled = true,
-			},
+			-- signature = {
+			-- 	enabled = false,
+			-- },
 		},
 		opts_extend = { "sources.default" },
 	},

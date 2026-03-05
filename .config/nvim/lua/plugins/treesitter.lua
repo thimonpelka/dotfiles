@@ -31,6 +31,7 @@ return {
         -- lazy = true,
         config = function()
             require("nvim-treesitter.config").setup({
+                highlight = { enable = true },
                 install_dir = vim.fn.stdpath('data') .. '/site',
                 textobjects = {
                     select = {
