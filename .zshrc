@@ -70,6 +70,7 @@ alias ll="eza -l --icons"
 alias la="eza -la --icons"
 alias cat="bat"
 alias cd="z"
+alias snvim='sudo XDG_CONFIG_HOME=$HOME/.config nvim'
 
 # Dotnet tools
 export PATH="$PATH:$HOME/.dotnet/tools"
