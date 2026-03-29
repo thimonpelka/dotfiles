@@ -107,3 +107,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 # Syntax highlighting
 # ===========================
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

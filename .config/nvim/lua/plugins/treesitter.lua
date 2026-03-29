@@ -89,6 +89,37 @@ return {
                     },
                 },
             })
+            vim.keymap.set({ "o", "x" }, "ap", function()
+                require("nvim-treesitter-textobjects.select").select_textobject("@parameter.outer", "textobjects")
+            end)
+
+            vim.keymap.set({ "o", "x" }, "ip", function()
+                require("nvim-treesitter-textobjects.select").select_textobject("@function.inner", "textobjects")
+            end)
+
+            vim.keymap.set({ "o", "x" }, "af", function()
+                require("nvim-treesitter-textobjects.select").select_textobject("@function.outer", "textobjects")
+            end)
+
+            vim.keymap.set({ "o", "x" }, "if", function()
+                require("nvim-treesitter-textobjects.select").select_textobject("@function.inner", "textobjects")
+            end)
+
+            vim.keymap.set({ "o", "x" }, "ac", function()
+                require("nvim-treesitter-textobjects.select").select_textobject("@class.outer", "textobjects")
+            end)
+
+            vim.keymap.set({ "o", "x" }, "ic", function()
+                require("nvim-treesitter-textobjects.select").select_textobject("@class.inner", "textobjects")
+            end)
+
+            vim.keymap.set({ "o", "x" }, "al", function()
+                require("nvim-treesitter-textobjects.select").select_textobject("@loop.outer", "textobjects")
+            end)
+
+            vim.keymap.set({ "o", "x" }, "il", function()
+                require("nvim-treesitter-textobjects.select").select_textobject("@loop.inner", "textobjects")
+            end)
 
             -- NEXT START
             vim.keymap.set({ "n", "x", "o" }, "-f", function()
