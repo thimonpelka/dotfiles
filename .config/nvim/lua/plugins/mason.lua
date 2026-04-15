@@ -23,8 +23,14 @@ vim.keymap.set("n", "<leader>sk", vim.lsp.buf.hover, {
 vim.keymap.set("n", "<leader>sd", vim.lsp.buf.definition, {
     desc = "Show Definition",
 })
+vim.keymap.set("n", "<leader>si", vim.lsp.buf.implementation, {
+    desc = "Show Implementation",
+})
 vim.keymap.set("n", "<leader>sr", vim.lsp.buf.references, {
     desc = "Show Reference",
+})
+vim.keymap.set("n", "<leader>st", vim.lsp.buf.type_definition, {
+    desc = "Show Type Definition",
 })
 -- vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {
 -- 	desc = "Show code action",
