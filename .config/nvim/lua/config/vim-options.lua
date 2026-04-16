@@ -21,7 +21,7 @@ vim.opt.shiftwidth = 4
 vim.opt.smartindent = true
 
 vim.keymap.set({ "v", "n", "i" }, "<C-s>", "<Esc>:wa<CR>", {})
-vim.keymap.set({ "v", "n", "i" }, "<C-a>", "<Esc>:wqa<CR>", {})
+-- vim.keymap.set({ "v", "n", "i" }, "<C-a>", "<Esc>:wqa<CR>", {})
 -- vim.keymap.set({ "v", "n", "i" }, "<C-d>", "<Esc>Vyp", {})
 vim.keymap.set({ "n" }, "<leader>d", "<Esc>Vyp", {
     desc = "Duplicate Line"

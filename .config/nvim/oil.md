@@ -2,7 +2,7 @@
 
 # Keybindings for Oil
 
-<leader>e - Open the Oil file explorer
+r - Open the Oil file explorer
 s - go back
 ö - go forward
 <C-v> - Open in vertical split

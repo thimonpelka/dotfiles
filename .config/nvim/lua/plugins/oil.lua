@@ -27,9 +27,9 @@ return {
 				}
 			})
 
-			vim.keymap.set("n", "<leader>e", function()
-				require("oil").open()
-			end, { desc = "Open Oil" })
+			-- vim.keymap.set("n", "<leader>e", function()
+			-- 	require("oil").open()
+			-- end, { desc = "Open Oil" })
 			vim.keymap.set("n", "r", function()
 				require("oil").open()
 			end, { desc = "Open Oil" })
