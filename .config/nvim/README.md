@@ -78,7 +78,7 @@
 
 ## Commands
 - :w - write
-- :q - quite
+- :q - quit
 - :Lazy - Lazy Menu
 - Space + f + g = search menu
 - w = next word
